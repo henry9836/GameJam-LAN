@@ -9,6 +9,7 @@ public class win : MonoBehaviour
         if (other.tag == "Target")
         {
             GetComponent<AudioSource>().Play();
+            transform.GetChild(0).GetComponent<Camera>().targetDisplay = 0;
         }
     }
 }
